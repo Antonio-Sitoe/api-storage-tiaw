@@ -220,7 +220,7 @@
       "id": 2,
       "empresaId": "d4228666-36a2-46c3-8469-dbc537960f84",
       "systemConfig": {
-        "redirectUrl": "https://web-services-p4gg9r50r-antonio-sitoes-projects.vercel.app/sucess",
+        "redirectUrl": "https://web-services-chi.vercel.app/sucess",
         "api": {
           "searchBPIN": false,
           "bpin": {
