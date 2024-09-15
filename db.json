@@ -345,19 +345,14 @@
             "order": 5,
             "required": true,
             "data": {
-              "hasWantConfirmesChecks": true,
+              "hasWantConfirmesChecks": false,
               "dataToShow": [
                 "document_number",
                 "name",
                 "birth_date",
-                "born_province_id",
                 "residence_zone",
-                "residence_district_id",
-                "place_issue",
                 "gender",
-                "nationality",
-                "issueDate",
-                "expirationDate"
+                "nationality"
               ]
             }
           },
