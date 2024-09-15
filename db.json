@@ -301,7 +301,7 @@
           },
           "register_aditional_data": {
             "order": 2,
-            "required": false,
+            "required": true,
             "data": {
               "title": "Dados adicionais"
             }
