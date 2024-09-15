@@ -212,7 +212,8 @@
           "welcome": {
             "title": "Sistema X",
             "body": "Bem-vindo ao Sistema X"
-          }
+          },
+          "sucessFace": "Face capturada com sucesso"
         }
       }
     },
@@ -396,7 +397,8 @@
           "welcome": {
             "title": "Sistema Y",
             "body": "Bem-vindo ao Sistema Y"
-          }
+          },
+          "sucessFace": "Face capturada com sucesso"
         }
       }
     },
@@ -580,7 +582,8 @@
           "welcome": {
             "title": "Sistema Z",
             "body": "Bem-vindo ao Sistema Z"
-          }
+          },
+          "sucessFace": "Face capturada com sucesso"
         }
       }
     },
@@ -764,7 +767,8 @@
           "welcome": {
             "title": "Sistema X",
             "body": "Bem-vindo ao Sistema X"
-          }
+          },
+          "sucessFace": "Face capturada com sucesso"
         }
       }
     },
@@ -948,7 +952,8 @@
           "welcome": {
             "title": "Sistema E",
             "body": "Bem-vindo ao Sistema E"
-          }
+          },
+          "sucessFace": "Face capturada com sucesso"
         }
       }
     }
