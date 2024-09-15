@@ -69,7 +69,9 @@
           "errorIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956074/l1v8a3vot1wyxfgwrfng.svg",
           "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg",
           "landscape": "https://res.cloudinary.com/noblestack/image/upload/v1726398112/cgtxvtztnojlaljbzo5g.svg",
-          "poweredBy": "https://res.cloudinary.com/noblestack/image/upload/v1726398113/q6sououthhztqir6o0uk.svg"
+          "poweredBy": "https://res.cloudinary.com/noblestack/image/upload/v1726398113/q6sououthhztqir6o0uk.svg",
+          "check": "https://res.cloudinary.com/noblestack/image/upload/v1726399041/eubdcgn7lvkym3ygpsx7.svg",
+          "logo": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png"
         },
         "document_type": [
           {
@@ -149,7 +151,13 @@
                 "nationality",
                 "born_province_id",
                 "gender"
-              ]
+              ],
+              "warnDialog": {
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1726399749/wuirxqspxfcclfmskjq3.svg",
+                "title": "Atenção!",
+                "subtitle": "Verifique os dados a seguir.",
+                "text": " Marque a caixa ao lado em todos os campos para confirmar se o dado está correcto ou não e clique em submeter para avançar"
+              }
             }
           },
           "message": {
@@ -228,7 +236,11 @@
         "assets": {
           "warnIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725949712/y26aqfnngy5ojen1lw8r.svg",
           "errorIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956074/l1v8a3vot1wyxfgwrfng.svg",
-          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg"
+          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg",
+          "landscape": "https://res.cloudinary.com/noblestack/image/upload/v1726398112/cgtxvtztnojlaljbzo5g.svg",
+          "poweredBy": "https://res.cloudinary.com/noblestack/image/upload/v1726398113/q6sououthhztqir6o0uk.svg",
+          "check": "https://res.cloudinary.com/noblestack/image/upload/v1726399041/eubdcgn7lvkym3ygpsx7.svg",
+          "logo": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png"
         },
         "document_type": [
           {
@@ -329,7 +341,13 @@
                 "residence_zone",
                 "gender",
                 "nationality"
-              ]
+              ],
+              "warnDialog": {
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1726399749/wuirxqspxfcclfmskjq3.svg",
+                "title": "Atenção!",
+                "subtitle": "Verifique os dados a seguir.",
+                "text": " Marque a caixa ao lado em todos os campos para confirmar se o dado está correcto ou não e clique em submeter para avançar"
+              }
             }
           },
           "message": {
@@ -408,7 +426,11 @@
         "assets": {
           "warnIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725949712/y26aqfnngy5ojen1lw8r.svg",
           "errorIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956074/l1v8a3vot1wyxfgwrfng.svg",
-          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg"
+          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg",
+          "landscape": "https://res.cloudinary.com/noblestack/image/upload/v1726398112/cgtxvtztnojlaljbzo5g.svg",
+          "poweredBy": "https://res.cloudinary.com/noblestack/image/upload/v1726398113/q6sououthhztqir6o0uk.svg",
+          "check": "https://res.cloudinary.com/noblestack/image/upload/v1726399041/eubdcgn7lvkym3ygpsx7.svg",
+          "logo": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png"
         },
         "document_type": [
           {
@@ -502,6 +524,12 @@
             "required": true,
             "data": {
               "hasWantConfirmesChecks": true,
+              "warnDialog": {
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1726399749/wuirxqspxfcclfmskjq3.svg",
+                "title": "Atenção!",
+                "subtitle": "Verifique os dados a seguir.",
+                "text": " Marque a caixa ao lado em todos os campos para confirmar se o dado está correcto ou não e clique em submeter para avançar"
+              },
               "dataToShow": [
                 "document_number",
                 "name",
@@ -593,7 +621,11 @@
         "assets": {
           "warnIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725949712/y26aqfnngy5ojen1lw8r.svg",
           "errorIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956074/l1v8a3vot1wyxfgwrfng.svg",
-          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg"
+          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg",
+          "landscape": "https://res.cloudinary.com/noblestack/image/upload/v1726398112/cgtxvtztnojlaljbzo5g.svg",
+          "poweredBy": "https://res.cloudinary.com/noblestack/image/upload/v1726398113/q6sououthhztqir6o0uk.svg",
+          "check": "https://res.cloudinary.com/noblestack/image/upload/v1726399041/eubdcgn7lvkym3ygpsx7.svg",
+          "logo": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png"
         },
         "document_type": [
           {
@@ -687,6 +719,12 @@
             "required": true,
             "data": {
               "hasWantConfirmesChecks": true,
+              "warnDialog": {
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1726399749/wuirxqspxfcclfmskjq3.svg",
+                "title": "Atenção!",
+                "subtitle": "Verifique os dados a seguir.",
+                "text": " Marque a caixa ao lado em todos os campos para confirmar se o dado está correcto ou não e clique em submeter para avançar"
+              },
               "dataToShow": [
                 "document_number",
                 "name",
@@ -778,7 +816,11 @@
         "assets": {
           "warnIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725949712/y26aqfnngy5ojen1lw8r.svg",
           "errorIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956074/l1v8a3vot1wyxfgwrfng.svg",
-          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg"
+          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg",
+          "landscape": "https://res.cloudinary.com/noblestack/image/upload/v1726398112/cgtxvtztnojlaljbzo5g.svg",
+          "poweredBy": "https://res.cloudinary.com/noblestack/image/upload/v1726398113/q6sououthhztqir6o0uk.svg",
+          "check": "https://res.cloudinary.com/noblestack/image/upload/v1726399041/eubdcgn7lvkym3ygpsx7.svg",
+          "logo": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png"
         },
         "document_type": [
           {
@@ -872,6 +914,12 @@
             "required": true,
             "data": {
               "hasWantConfirmesChecks": true,
+              "warnDialog": {
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1726399749/wuirxqspxfcclfmskjq3.svg",
+                "title": "Atenção!",
+                "subtitle": "Verifique os dados a seguir.",
+                "text": " Marque a caixa ao lado em todos os campos para confirmar se o dado está correcto ou não e clique em submeter para avançar"
+              },
               "dataToShow": [
                 "document_number",
                 "name",
