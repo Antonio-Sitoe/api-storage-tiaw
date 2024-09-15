@@ -319,7 +319,7 @@
           },
           "ocr": {
             "order": 5,
-            "required": true,
+            "required": false,
             "data": {
               "similarityDialog": {
                 "sucessMessage": "Confirmação de identidade com sucesso com",
@@ -330,7 +330,7 @@
           },
           "show_data": {
             "order": 4,
-            "required": false,
+            "required": true,
             "data": {
               "hasWantConfirmesChecks": false,
               "dataToShow": [
