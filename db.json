@@ -36,7 +36,7 @@
       "id": 1,
       "empresaId": "c7eb52ea-ba17-4d05-8862-8b951ccc4089",
       "systemConfig": {
-        "redirectUrl": "https://web-services-chi.vercel.app/sucess",
+        "redirectUrl": "https://web-services-chi.vercel.app",
         "api": {
           "searchBPIN": false,
           "bpin": {
@@ -393,7 +393,7 @@
       "id": 3,
       "empresaId": "e15d31f2-7db9-4cbf-9d93-99dd8fa1ff5c",
       "systemConfig": {
-        "redirectUrl": "https://web-services-chi.vercel.app",
+        "redirectUrl": "https://web-services-chi.vercel.app/sucess",
         "api": {
           "searchBPIN": false,
           "bpin": {
