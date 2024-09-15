@@ -330,7 +330,7 @@
           },
           "show_data": {
             "order": 4,
-            "required": true,
+            "required": false,
             "data": {
               "hasWantConfirmesChecks": false,
               "dataToShow": [
