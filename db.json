@@ -660,7 +660,7 @@
         "flow_sequency": {
           "initial": {
             "order": 1,
-            "required": false,
+            "required": true,
             "data": {
               "title": "Siga as instruções empresa A",
               "info": [
@@ -684,7 +684,7 @@
             }
           },
           "liveness": {
-            "order": 2,
+            "order": 3,
             "required": true,
             "data": {
               "livenessType": "1"
@@ -710,7 +710,7 @@
           },
           "show_data": {
             "order": 5,
-            "required": false,
+            "required": true,
             "data": {
               "hasWantConfirmesChecks": false,
               "warnDialog": {
@@ -736,7 +736,7 @@
           },
           "message": {
             "order": 6,
-            "required": false,
+            "required": true,
             "data": {
               "title": {
                 "warn": "Ja realizou o registo agora pode submeter os teus dados",
