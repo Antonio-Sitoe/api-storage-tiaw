@@ -371,10 +371,6 @@
           }
         },
         "customMessages": {
-          "welcome": {
-            "title": "Sistema Y",
-            "body": "Bem-vindo ao Sistema Y"
-          },
           "sucessFace": "Face capturada com sucesso",
           "ocrMessage": "Dados capturados com sucesso"
         }
