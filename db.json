@@ -576,10 +576,6 @@
           }
         },
         "customMessages": {
-          "welcome": {
-            "title": "Sistema Z",
-            "body": "Bem-vindo ao Sistema Z"
-          },
           "sucessFace": "Face capturada com sucesso",
           "ocrMessage": "Dados capturados com sucesso"
         }
@@ -717,7 +713,7 @@
             "order": 5,
             "required": true,
             "data": {
-              "hasWantConfirmesChecks": true,
+              "hasWantConfirmesChecks": false,
               "warnDialog": {
                 "img": "https://res.cloudinary.com/noblestack/image/upload/v1726399749/wuirxqspxfcclfmskjq3.svg",
                 "title": "Atenção!",
@@ -913,7 +909,7 @@
             "order": 5,
             "required": true,
             "data": {
-              "hasWantConfirmesChecks": true,
+              "hasWantConfirmesChecks": false,
               "warnDialog": {
                 "img": "https://res.cloudinary.com/noblestack/image/upload/v1726399749/wuirxqspxfcclfmskjq3.svg",
                 "title": "Atenção!",
