@@ -699,7 +699,7 @@
           },
           "ocr": {
             "order": 2,
-            "required": false,
+            "required": true,
             "data": {
               "similarityDialog": {
                 "sucessMessage": "Confirmação de identidade com sucesso com",
