@@ -573,7 +573,7 @@
       "id": 4,
       "empresaId": "b4f730a7-c2a3-49be-8051-8f6d2b15f447",
       "systemConfig": {
-        "autoClose": false,
+        "autoClose": true,
         "redirectUrl": "https://web-services-chi.vercel.app/sucess",
         "api": {
           "searchBPIN": false,
