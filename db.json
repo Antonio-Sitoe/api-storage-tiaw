@@ -67,7 +67,9 @@
         "assets": {
           "warnIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725949712/y26aqfnngy5ojen1lw8r.svg",
           "errorIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956074/l1v8a3vot1wyxfgwrfng.svg",
-          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg"
+          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg",
+          "landscape": "https://res.cloudinary.com/noblestack/image/upload/v1726398112/cgtxvtztnojlaljbzo5g.svg",
+          "poweredBy": "https://res.cloudinary.com/noblestack/image/upload/v1726398113/q6sououthhztqir6o0uk.svg"
         },
         "document_type": [
           {
