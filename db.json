@@ -384,7 +384,8 @@
             "title": "Sistema Y",
             "body": "Bem-vindo ao Sistema Y"
           },
-          "sucessFace": "Face capturada com sucesso"
+          "sucessFace": "Face capturada com sucesso",
+          "ocrMessage": "Dados capturados com sucesso"
         }
       }
     },
@@ -579,7 +580,8 @@
             "title": "Sistema Z",
             "body": "Bem-vindo ao Sistema Z"
           },
-          "sucessFace": "Face capturada com sucesso"
+          "sucessFace": "Face capturada com sucesso",
+          "ocrMessage": "Dados capturados com sucesso"
         }
       }
     },
@@ -774,7 +776,8 @@
             "title": "Sistema X",
             "body": "Bem-vindo ao Sistema X"
           },
-          "sucessFace": "Face capturada com sucesso"
+          "sucessFace": "Face capturada com sucesso",
+          "ocrMessage": "Dados capturados com sucesso"
         }
       }
     },
@@ -965,7 +968,8 @@
           }
         },
         "customMessages": {
-          "sucessFace": "Face capturada com sucesso"
+          "sucessFace": "Face capturada com sucesso",
+          "ocrMessage": "Dados capturados com sucesso"
         }
       }
     }
