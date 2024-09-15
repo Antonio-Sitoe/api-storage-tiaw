@@ -646,7 +646,7 @@
         "flow_sequency": {
           "initial": {
             "order": 1,
-            "required": true,
+            "required": false,
             "data": {
               "title": "Siga as instruções",
               "info": [
@@ -677,12 +677,12 @@
           },
           "liveness": {
             "order": 2,
-            "required": true,
+            "required": false,
             "data": {}
           },
           "register_aditional_data": {
             "order": 3,
-            "required": true,
+            "required": false,
             "data": {
               "title": "Dados adicionais"
             }
@@ -726,7 +726,7 @@
           },
           "message": {
             "order": 6,
-            "required": true,
+            "required": false,
             "data": {
               "title": {
                 "warn": "Ja realizou o registo agora pode submeter os teus dados",
