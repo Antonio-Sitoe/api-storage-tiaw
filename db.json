@@ -122,7 +122,9 @@
           "liveness": {
             "order": 2,
             "required": false,
-            "data": {}
+            "data": {
+              "livenessType": "1"
+            }
           },
           "register_aditional_data": {
             "order": 3,
@@ -301,7 +303,9 @@
           "liveness": {
             "order": 3,
             "required": true,
-            "data": {}
+            "data": {
+              "livenessType": "1"
+            }
           },
           "register_aditional_data": {
             "order": 2,
@@ -491,7 +495,9 @@
           "liveness": {
             "order": 2,
             "required": true,
-            "data": {}
+            "data": {
+              "livenessType": "1"
+            }
           },
           "register_aditional_data": {
             "order": 3,
@@ -680,7 +686,9 @@
           "liveness": {
             "order": 2,
             "required": true,
-            "data": {}
+            "data": {
+              "livenessType": "1"
+            }
           },
           "register_aditional_data": {
             "order": 4,
@@ -879,7 +887,9 @@
           "liveness": {
             "order": 2,
             "required": true,
-            "data": {}
+            "data": {
+              "livenessType": "1"
+            }
           },
           "register_aditional_data": {
             "order": 3,
