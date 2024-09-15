@@ -118,7 +118,7 @@
           },
           "liveness": {
             "order": 2,
-            "required": true,
+            "required": false,
             "data": {}
           },
           "register_aditional_data": {
@@ -193,10 +193,6 @@
           }
         },
         "customMessages": {
-          "welcome": {
-            "title": "Sistema X",
-            "body": "Bem-vindo ao Sistema X"
-          },
           "sucessFace": "Face capturada com sucesso"
         }
       }
@@ -277,7 +273,7 @@
         "flow_sequency": {
           "initial": {
             "order": 1,
-            "required": true,
+            "required": false,
             "data": {
               "title": "Siga as instruções",
               "info": [
@@ -313,13 +309,13 @@
           },
           "register_aditional_data": {
             "order": 3,
-            "required": true,
+            "required": false,
             "data": {
               "title": "Dados adicionais"
             }
           },
           "ocr": {
-            "order": 4,
+            "order": 6,
             "required": true,
             "data": {
               "similarityDialog": {
@@ -330,8 +326,8 @@
             }
           },
           "show_data": {
-            "order": 5,
-            "required": true,
+            "order": 4,
+            "required": false,
             "data": {
               "hasWantConfirmesChecks": false,
               "dataToShow": [
@@ -351,7 +347,7 @@
             }
           },
           "message": {
-            "order": 6,
+            "order": 5,
             "required": true,
             "data": {
               "title": {
@@ -370,7 +366,7 @@
           },
           "scanQrcode": {
             "order": 90,
-            "active": true,
+            "active": false,
             "required": false,
             "data": {
               "img": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png",
@@ -503,7 +499,7 @@
           },
           "register_aditional_data": {
             "order": 3,
-            "required": true,
+            "required": false,
             "data": {
               "title": "Dados adicionais"
             }
@@ -565,7 +561,7 @@
           },
           "scanQrcode": {
             "order": 90,
-            "active": true,
+            "active": false,
             "required": false,
             "data": {
               "img": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png",
@@ -705,7 +701,7 @@
           },
           "ocr": {
             "order": 4,
-            "required": true,
+            "required": false,
             "data": {
               "similarityDialog": {
                 "sucessMessage": "Confirmação de identidade com sucesso com",
@@ -760,7 +756,7 @@
           },
           "scanQrcode": {
             "order": 90,
-            "active": true,
+            "active": false,
             "required": false,
             "data": {
               "img": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png",
@@ -968,10 +964,6 @@
           }
         },
         "customMessages": {
-          "welcome": {
-            "title": "Sistema E",
-            "body": "Bem-vindo ao Sistema E"
-          },
           "sucessFace": "Face capturada com sucesso"
         }
       }
