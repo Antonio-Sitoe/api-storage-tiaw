@@ -688,7 +688,7 @@
             }
           },
           "ocr": {
-            "order": 1,
+            "order": 2,
             "required": true,
             "data": {
               "similarityDialog": {
