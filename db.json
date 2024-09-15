@@ -84,21 +84,6 @@
             "id": 3,
             "name": "Carta de Conducão",
             "code": "Driving_License"
-          },
-          {
-            "id": 4,
-            "name": "DIRE",
-            "code": "DIRE"
-          },
-          {
-            "id": 5,
-            "name": "Cartão de eleitor",
-            "code": "Voting_Card"
-          },
-          {
-            "id": 6,
-            "name": "Cartão de refugiado",
-            "code": ""
           }
         ],
         "flow_sequency": {
@@ -117,12 +102,6 @@
                   "title": "Escanear o documento",
                   "description": "Faça o scan do seu documento.",
                   "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
-                },
-                {
-                  "title": "Problemas na câmera?",
-                  "description": "Se o telemóvel tiver problemas na câmera, permitimos que continue o processo usando outro telemóvel.",
-                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793231/bpyseteahcna9kmef9oc.svg",
-                  "action": true
                 }
               ],
               "buttonRedirect": {
@@ -140,7 +119,7 @@
           },
           "register_aditional_data": {
             "order": 3,
-            "required": true,
+            "required": false,
             "data": {
               "title": "Dados adicionais"
             }
@@ -160,19 +139,14 @@
             "order": 5,
             "required": true,
             "data": {
-              "hasWantConfirmesChecks": true,
+              "hasWantConfirmesChecks": false,
               "dataToShow": [
                 "document_number",
                 "name",
                 "birth_date",
-                "born_province_id",
-                "residence_zone",
-                "residence_district_id",
-                "place_issue",
-                "gender",
                 "nationality",
-                "issueDate",
-                "expirationDate"
+                "born_province_id",
+                "gender"
               ]
             }
           },
