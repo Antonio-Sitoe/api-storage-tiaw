@@ -645,8 +645,8 @@
         ],
         "flow_sequency": {
           "initial": {
-            "order": 0,
-            "required": false,
+            "order": 1,
+            "required": true,
             "data": {
               "title": "",
               "info": [],
@@ -659,19 +659,19 @@
             }
           },
           "liveness": {
-            "order": 2,
-            "required": false,
+            "order": 3,
+            "required": true,
             "data": {}
           },
           "register_aditional_data": {
-            "order": 3,
+            "order": 4,
             "required": false,
             "data": {
               "title": "Dados adicionais"
             }
           },
           "ocr": {
-            "order": 1,
+            "order": 2,
             "required": true,
             "data": {
               "similarityDialog": {
