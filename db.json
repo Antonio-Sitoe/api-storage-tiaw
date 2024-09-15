@@ -193,7 +193,8 @@
           }
         },
         "customMessages": {
-          "sucessFace": "Face capturada com sucesso"
+          "sucessFace": "Face capturada com sucesso",
+          "ocrMessage": "Dados capturados com sucesso"
         }
       }
     },
