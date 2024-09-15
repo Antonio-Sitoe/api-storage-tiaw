@@ -683,7 +683,7 @@
           },
           "show_data": {
             "order": 5,
-            "required": true,
+            "required": false,
             "data": {
               "hasWantConfirmesChecks": false,
               "warnDialog": {
