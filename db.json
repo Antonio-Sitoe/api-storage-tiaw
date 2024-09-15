@@ -40,6 +40,8 @@
         "redirectUrl": "https://web-services-chi.vercel.app",
         "api": {
           "searchBPIN": false,
+          "livenessSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/face_liveness_component.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
+          "ocrSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/document_reader.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
           "bpin": {
             "url": "https://modi.six.tablu.tech/api/bpin_check_subscriber",
             "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
@@ -207,6 +209,8 @@
         "redirectUrl": "https://web-services-chi.vercel.app/sucess",
         "api": {
           "searchBPIN": false,
+          "livenessSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/face_liveness_component.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
+          "ocrSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/document_reader.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
           "bpin": {
             "url": "https://modi.six.tablu.tech/api/bpin_check_subscriber",
             "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
@@ -384,6 +388,8 @@
         "redirectUrl": "https://web-services-chi.vercel.app/sucess",
         "api": {
           "searchBPIN": false,
+          "livenessSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/face_liveness_component.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
+          "ocrSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/document_reader.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
           "bpin": {
             "url": "https://modi.six.tablu.tech/api/bpin_check_subscriber",
             "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
@@ -577,6 +583,8 @@
         "redirectUrl": "https://web-services-chi.vercel.app/sucess",
         "api": {
           "searchBPIN": false,
+          "livenessSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/face_liveness_component.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
+          "ocrSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/document_reader.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
           "bpin": {
             "url": "https://modi.six.tablu.tech/api/bpin_check_subscriber",
             "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
@@ -768,6 +776,8 @@
         "redirectUrl": "https://web-services-chi.vercel.app/sucess",
         "api": {
           "searchBPIN": false,
+          "livenessSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/face_liveness_component.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
+          "ocrSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/document_reader.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
           "bpin": {
             "url": "https://modi.six.tablu.tech/api/bpin_check_subscriber",
             "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
