@@ -316,7 +316,7 @@
             }
           },
           "ocr": {
-            "order": 6,
+            "order": 5,
             "required": true,
             "data": {
               "similarityDialog": {
@@ -348,7 +348,7 @@
             }
           },
           "message": {
-            "order": 5,
+            "order": 6,
             "required": true,
             "data": {
               "title": {
