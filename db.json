@@ -137,6 +137,7 @@
             "order": 4,
             "required": true,
             "data": {
+              "startScrean": false,
               "similarityDialog": {
                 "sucessMessage": "Confirmação de identidade com sucesso com",
                 "errorMessage": "Confirmação de identidade sem sucesso com",
@@ -318,6 +319,7 @@
             "order": 5,
             "required": false,
             "data": {
+              "startScrean": false,
               "similarityDialog": {
                 "sucessMessage": "Confirmação de identidade com sucesso com",
                 "errorMessage": "Confirmação de identidade sem sucesso com",
@@ -510,6 +512,7 @@
             "order": 4,
             "required": true,
             "data": {
+              "startScrean": false,
               "similarityDialog": {
                 "sucessMessage": "Confirmação de identidade com sucesso com",
                 "errorMessage": "Confirmação de identidade sem sucesso com",
@@ -701,6 +704,7 @@
             "order": 2,
             "required": true,
             "data": {
+              "startScrean": false,
               "similarityDialog": {
                 "sucessMessage": "Confirmação de identidade com sucesso com",
                 "errorMessage": "Confirmação de identidade sem sucesso com",
@@ -902,6 +906,7 @@
             "order": 4,
             "required": true,
             "data": {
+              "startScrean": false,
               "similarityDialog": {
                 "sucessMessage": "Confirmação de identidade com sucesso com",
                 "errorMessage": "Confirmação de identidade sem sucesso com",
