@@ -136,6 +136,11 @@
             "required": false,
             "data": {
               "startScrean": false,
+              "documentDialog": {
+                "title": "Faça scan do seu documento de identificação",
+                "label": "Tipo de documento",
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
+              },
               "similarityDialog": {
                 "sucessMessage": "Confirmação de identidade com sucesso com",
                 "errorMessage": "Confirmação de identidade sem sucesso com",
@@ -323,6 +328,11 @@
             "required": true,
             "data": {
               "startScrean": false,
+              "documentDialog": {
+                "title": "Faça scan do seu documento de identificação",
+                "label": "Tipo de documento",
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
+              },
               "similarityDialog": {
                 "sucessMessage": "Confirmação de identidade com sucesso com",
                 "errorMessage": "Confirmação de identidade sem sucesso com",
@@ -525,6 +535,11 @@
             "required": true,
             "data": {
               "startScrean": false,
+              "documentDialog": {
+                "title": "Faça scan do seu documento de identificação",
+                "label": "Tipo de documento",
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
+              },
               "similarityDialog": {
                 "sucessMessage": "Confirmação de identidade com sucesso com",
                 "errorMessage": "Confirmação de identidade sem sucesso com",
