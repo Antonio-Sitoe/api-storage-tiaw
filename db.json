@@ -138,7 +138,7 @@
             }
           },
           "ocr": {
-            "order": 5,
+            "order": 4,
             "required": true,
             "data": {
               "startScrean": false,
@@ -155,7 +155,7 @@
             }
           },
           "show_data": {
-            "order": 4,
+            "order": 5,
             "required": true,
             "data": {
               "hasWantConfirmesChecks": true,
