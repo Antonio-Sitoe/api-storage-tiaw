@@ -127,7 +127,8 @@
             "order": 3,
             "required": false,
             "data": {
-              "livenessType": "1"
+              "livenessType": "1",
+              "hasSimilarity": true
             }
           },
           "register_aditional_data": {
@@ -527,7 +528,8 @@
             "order": 2,
             "required": true,
             "data": {
-              "livenessType": "1"
+              "livenessType": "1",
+              "hasSimilarity": true
             }
           },
           "register_aditional_data": {
@@ -730,7 +732,8 @@
             "order": 2,
             "required": true,
             "data": {
-              "livenessType": "1"
+              "livenessType": "1",
+              "hasSimilarity": true
             }
           },
           "register_aditional_data": {
@@ -922,7 +925,8 @@
             "order": 2,
             "required": true,
             "data": {
-              "livenessType": "1"
+              "livenessType": "1",
+              "hasSimilarity": true
             }
           },
           "register_aditional_data": {
@@ -1114,7 +1118,8 @@
             "order": 2,
             "required": false,
             "data": {
-              "livenessType": "1"
+              "livenessType": "1",
+              "hasSimilarity": true
             }
           },
           "register_aditional_data": {
@@ -1317,7 +1322,8 @@
             "order": 3,
             "required": true,
             "data": {
-              "livenessType": "1"
+              "livenessType": "1",
+              "hasSimilarity": true
             }
           },
           "register_aditional_data": {
