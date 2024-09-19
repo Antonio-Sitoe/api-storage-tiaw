@@ -420,7 +420,7 @@
       "id": 3,
       "entityId": "e15d31f2-7db9-4cbf-9d93-99dd8fa1ff5c",
       "systemConfiguration": {
-        "autoClose": false,
+        "autoClose": true,
         "redirectUrl": "https://web-services-chi.vercel.app/sucess",
         "apiEndpoints": {
           "bpinSearchEnabled": false,
