@@ -319,7 +319,8 @@
             "order": 3,
             "required": true,
             "data": {
-              "livenessType": "1"
+              "livenessType": "1",
+              "hasSimilarity": true
             }
           },
           "register_aditional_data": {
