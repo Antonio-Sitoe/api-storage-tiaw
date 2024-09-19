@@ -17,6 +17,12 @@
       "nome": "Empresa C",
       "endereco": "Rua C, 789",
       "telefone": "(11) 5647-8765"
+    },
+    {
+      "id": "e15d31f2-9876-acvb-123-1efgegfth65g",
+      "nome": "Empresa D",
+      "endereco": "Rua C, 789",
+      "telefone": "(11) 5647-8765"
     }
   ],
   "config": [
@@ -99,14 +105,14 @@
         "workflowSteps": {
           "initial": {
             "order": 1,
-            "required": false,
+            "required": true,
             "data": {
               "title": "Siga as instruções",
               "info": [
                 {
-                  "title": "Prova de vida",
-                  "description": "Com o telemóvel, siga as indicações do sistema para validar a fotografia do seu documento.",
-                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/r3zxluvkq0sb7iuojizf.svg"
+                  "title": "Escanear o documento",
+                  "description": "Faça o scan do seu documento.",
+                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
                 }
               ],
               "buttonRedirect": {
@@ -119,21 +125,21 @@
           },
           "liveness": {
             "order": 3,
-            "required": true,
+            "required": false,
             "data": {
               "livenessType": "1"
             }
           },
           "register_aditional_data": {
             "order": 2,
-            "required": true,
+            "required": false,
             "data": {
               "title": "Dados adicionais"
             }
           },
           "ocr": {
             "order": 5,
-            "required": false,
+            "required": true,
             "data": {
               "startScrean": false,
               "documentDialog": {
@@ -150,9 +156,9 @@
           },
           "show_data": {
             "order": 4,
-            "required": false,
+            "required": true,
             "data": {
-              "hasWantConfirmesChecks": false,
+              "hasWantConfirmesChecks": true,
               "dataToShow": [
                 "document_number",
                 "name",
@@ -291,14 +297,14 @@
               "title": "Siga as instruções empresa A",
               "info": [
                 {
-                  "title": "Prova de vida",
-                  "description": "Com o telemóvel, siga as indicações do sistema para validar a fotografia do seu documento.",
-                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/r3zxluvkq0sb7iuojizf.svg"
-                },
-                {
                   "title": "Escanear o documento",
                   "description": "Faça o scan do seu documento.",
                   "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
+                },
+                {
+                  "title": "Prova de vida",
+                  "description": "Com o telemóvel, siga as indicações do sistema para validar a fotografia do seu documento.",
+                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/r3zxluvkq0sb7iuojizf.svg"
                 }
               ],
               "buttonRedirect": {
@@ -342,7 +348,7 @@
           },
           "show_data": {
             "order": 5,
-            "required": true,
+            "required": false,
             "data": {
               "hasWantConfirmesChecks": false,
               "warnDialog": {
@@ -525,7 +531,7 @@
           },
           "register_aditional_data": {
             "order": 3,
-            "required": true,
+            "required": false,
             "data": {
               "title": "Dados adicionais"
             }
@@ -550,6 +556,796 @@
           "show_data": {
             "order": 5,
             "required": true,
+            "data": {
+              "hasWantConfirmesChecks": true,
+              "warnDialog": {
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1726399749/wuirxqspxfcclfmskjq3.svg",
+                "title": "Atenção!",
+                "subtitle": "Verifique os dados a seguir.",
+                "text": " Marque a caixa ao lado em todos os campos para confirmar se o dado está correcto ou não e clique em submeter para avançar"
+              },
+              "dataToShow": [
+                "document_number",
+                "name",
+                "birth_date",
+                "born_province_id",
+                "residence_zone",
+                "residence_district_id",
+                "place_issue",
+                "gender",
+                "nationality",
+                "issueDate",
+                "expirationDate"
+              ]
+            }
+          },
+          "message": {
+            "order": 6,
+            "required": true,
+            "data": {
+              "title": {
+                "warn": "Ja realizou o registo agora pode submeter os teus dados",
+                "sucess": "Registo concluido com sucesso"
+              },
+              "description": {
+                "warn": "Lorem ipsum dolor sit, amet consectetur adipisicing elit Accusantium temporibus sapiente",
+                "sucess": "Lorem ipsum dolor sit, amet consectetur adipisicing elit Accusantium temporibus sapiente"
+              },
+              "button": {
+                "warn": "Enviar os dados",
+                "sucess": "Terminar"
+              }
+            }
+          },
+          "scanQrcode": {
+            "order": 90,
+            "active": true,
+            "required": false,
+            "data": {
+              "img": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png",
+              "title": "Captura e Confirmação da sua identidade",
+              "subtitle": "Digita o número do telemóvel ou faça scan do código QR para receber o link",
+              "qrcodeWasScan": {
+                "message": "Caro subscritor, o seu processo de registro será finalizado no seu dispositivo."
+              }
+            }
+          }
+        },
+        "customMessages": {
+          "sucessFace": "Face capturada com sucesso",
+          "ocrMessage": "Dados capturados com sucesso"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "entityId": "e15d31f2-9876-acvb-123-1efgegfth65g",
+      "systemConfiguration": {
+        "autoClose": false,
+        "redirectUrl": "https://web-services-chi.vercel.app/sucess",
+        "apiEndpoints": {
+          "bpinSearchEnabled": false,
+          "livenessSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/face_liveness_component.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
+          "ocrSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/document_reader.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
+          "bpin": {
+            "url": "https://modi.six.tablu.tech/api/bpin_check_subscriber",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "search_person": {
+            "url": "https://modi.six.tablu.tech/api/search_biometry_person",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "scan_face": {
+            "url": "https://modi.scan.tablu.tech/scan_face",
+            "token": "$2y$10$wsSpnCL1b2lNXTwfbnu2geal//orwZrAZh8lDT24ox7WOsE09p6.6"
+          },
+          "checkQrcode": {
+            "url": "https://modi.ocr.tablu.tech/see_qrcode_scanned",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "sendToken": {
+            "url": "https://modi.ocr.tablu.tech/sendToken",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "sendData": {
+            "url": "https://portal-7okv-git-modi-sdk-release-antonio-sitoes-projects.vercel.app/api/subscriber",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          }
+        },
+        "assets": {
+          "warnIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725949712/y26aqfnngy5ojen1lw8r.svg",
+          "errorIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956074/l1v8a3vot1wyxfgwrfng.svg",
+          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg",
+          "landscape": "https://res.cloudinary.com/noblestack/image/upload/v1726398112/cgtxvtztnojlaljbzo5g.svg",
+          "poweredBy": "https://res.cloudinary.com/noblestack/image/upload/v1726398113/q6sououthhztqir6o0uk.svg",
+          "check": "https://res.cloudinary.com/noblestack/image/upload/v1726399041/eubdcgn7lvkym3ygpsx7.svg",
+          "logo": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png"
+        },
+        "document_type": [
+          {
+            "id": 1,
+            "name": "Bilhete de identidade",
+            "code": "ID"
+          },
+          {
+            "id": 2,
+            "name": "Passaporte",
+            "code": "Passport"
+          },
+          {
+            "id": 3,
+            "name": "Carta de Conducão",
+            "code": "Driving_License"
+          },
+          {
+            "id": 4,
+            "name": "DIRE",
+            "code": "DIRE"
+          },
+          {
+            "id": 5,
+            "name": "Cartão de eleitor",
+            "code": "Voting_Card"
+          },
+          {
+            "id": 6,
+            "name": "Cartão de refugiado",
+            "code": ""
+          }
+        ],
+        "workflowSteps": {
+          "initial": {
+            "order": 1,
+            "required": true,
+            "data": {
+              "title": "Siga as instruções",
+              "info": [
+                {
+                  "title": "Prova de vida",
+                  "description": "Com o telemóvel, siga as indicações do sistema para validar a fotografia do seu documento.",
+                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/r3zxluvkq0sb7iuojizf.svg"
+                },
+                {
+                  "title": "Escanear o documento",
+                  "description": "Faça o scan do seu documento.",
+                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
+                },
+                {
+                  "title": "Problemas na câmera?",
+                  "description": "Se o telemóvel tiver problemas na câmera, permitimos que continue o processo usando outro telemóvel.",
+                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793231/bpyseteahcna9kmef9oc.svg",
+                  "action": true
+                }
+              ],
+              "buttonRedirect": {
+                "label": "Clica aqui para mudar de telefone"
+              },
+              "button": {
+                "label": "Iniciar"
+              }
+            }
+          },
+          "liveness": {
+            "order": 2,
+            "required": true,
+            "data": {
+              "livenessType": "1"
+            }
+          },
+          "register_aditional_data": {
+            "order": 3,
+            "required": true,
+            "data": {
+              "title": "Dados adicionais"
+            }
+          },
+          "ocr": {
+            "order": 4,
+            "required": false,
+            "data": {
+              "startScrean": false,
+              "documentDialog": {
+                "title": "Faça scan do seu documento de identificação",
+                "label": "Tipo de documento",
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
+              },
+              "similarityDialog": {
+                "sucessMessage": "Confirmação de identidade com sucesso com",
+                "errorMessage": "Confirmação de identidade sem sucesso com",
+                "restMessage": "de nível de similaridade!"
+              }
+            }
+          },
+          "show_data": {
+            "order": 5,
+            "required": false,
+            "data": {
+              "hasWantConfirmesChecks": true,
+              "warnDialog": {
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1726399749/wuirxqspxfcclfmskjq3.svg",
+                "title": "Atenção!",
+                "subtitle": "Verifique os dados a seguir.",
+                "text": " Marque a caixa ao lado em todos os campos para confirmar se o dado está correcto ou não e clique em submeter para avançar"
+              },
+              "dataToShow": [
+                "document_number",
+                "name",
+                "birth_date",
+                "born_province_id",
+                "residence_zone",
+                "residence_district_id",
+                "place_issue",
+                "gender",
+                "nationality",
+                "issueDate",
+                "expirationDate"
+              ]
+            }
+          },
+          "message": {
+            "order": 6,
+            "required": true,
+            "data": {
+              "title": {
+                "warn": "Ja realizou o registo agora pode submeter os teus dados",
+                "sucess": "Registo concluido com sucesso"
+              },
+              "description": {
+                "warn": "Lorem ipsum dolor sit, amet consectetur adipisicing elit Accusantium temporibus sapiente",
+                "sucess": "Lorem ipsum dolor sit, amet consectetur adipisicing elit Accusantium temporibus sapiente"
+              },
+              "button": {
+                "warn": "Enviar os dados",
+                "sucess": "Terminar"
+              }
+            }
+          },
+          "scanQrcode": {
+            "order": 90,
+            "active": true,
+            "required": false,
+            "data": {
+              "img": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png",
+              "title": "Captura e Confirmação da sua identidade",
+              "subtitle": "Digita o número do telemóvel ou faça scan do código QR para receber o link",
+              "qrcodeWasScan": {
+                "message": "Caro subscritor, o seu processo de registro será finalizado no seu dispositivo."
+              }
+            }
+          }
+        },
+        "customMessages": {
+          "sucessFace": "Face capturada com sucesso",
+          "ocrMessage": "Dados capturados com sucesso"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "entityId": "c694ac9f-315a-4117-87a2-bf0d38362e68",
+      "systemConfiguration": {
+        "autoClose": false,
+        "redirectUrl": "https://web-services-chi.vercel.app/sucess",
+        "apiEndpoints": {
+          "bpinSearchEnabled": false,
+          "livenessSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/face_liveness_component.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
+          "ocrSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/document_reader.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
+          "bpin": {
+            "url": "https://modi.six.tablu.tech/api/bpin_check_subscriber",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "search_person": {
+            "url": "https://modi.six.tablu.tech/api/search_biometry_person",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "scan_face": {
+            "url": "https://modi.scan.tablu.tech/scan_face",
+            "token": "$2y$10$wsSpnCL1b2lNXTwfbnu2geal//orwZrAZh8lDT24ox7WOsE09p6.6"
+          },
+          "checkQrcode": {
+            "url": "https://modi.ocr.tablu.tech/see_qrcode_scanned",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "sendToken": {
+            "url": "https://modi.ocr.tablu.tech/sendToken",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "sendData": {
+            "url": "https://portal-7okv-git-modi-sdk-release-antonio-sitoes-projects.vercel.app/api/subscriber",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          }
+        },
+        "assets": {
+          "warnIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725949712/y26aqfnngy5ojen1lw8r.svg",
+          "errorIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956074/l1v8a3vot1wyxfgwrfng.svg",
+          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg",
+          "landscape": "https://res.cloudinary.com/noblestack/image/upload/v1726398112/cgtxvtztnojlaljbzo5g.svg",
+          "poweredBy": "https://res.cloudinary.com/noblestack/image/upload/v1726398113/q6sououthhztqir6o0uk.svg",
+          "check": "https://res.cloudinary.com/noblestack/image/upload/v1726399041/eubdcgn7lvkym3ygpsx7.svg",
+          "logo": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png"
+        },
+        "document_type": [
+          {
+            "id": 1,
+            "name": "Bilhete de identidade",
+            "code": "ID"
+          },
+          {
+            "id": 2,
+            "name": "Passaporte",
+            "code": "Passport"
+          },
+          {
+            "id": 3,
+            "name": "Carta de Conducão",
+            "code": "Driving_License"
+          },
+          {
+            "id": 4,
+            "name": "DIRE",
+            "code": "DIRE"
+          },
+          {
+            "id": 5,
+            "name": "Cartão de eleitor",
+            "code": "Voting_Card"
+          },
+          {
+            "id": 6,
+            "name": "Cartão de refugiado",
+            "code": ""
+          }
+        ],
+        "workflowSteps": {
+          "initial": {
+            "order": 1,
+            "required": true,
+            "data": {
+              "title": "Siga as instruções",
+              "info": [
+                {
+                  "title": "Prova de vida",
+                  "description": "Com o telemóvel, siga as indicações do sistema para validar a fotografia do seu documento.",
+                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/r3zxluvkq0sb7iuojizf.svg"
+                }
+              ],
+              "buttonRedirect": {
+                "label": "Clica aqui para mudar de telefone"
+              },
+              "button": {
+                "label": "Iniciar"
+              }
+            }
+          },
+          "liveness": {
+            "order": 2,
+            "required": true,
+            "data": {
+              "livenessType": "1"
+            }
+          },
+          "register_aditional_data": {
+            "order": 3,
+            "required": false,
+            "data": {
+              "title": "Dados adicionais"
+            }
+          },
+          "ocr": {
+            "order": 4,
+            "required": false,
+            "data": {
+              "startScrean": false,
+              "documentDialog": {
+                "title": "Faça scan do seu documento de identificação",
+                "label": "Tipo de documento",
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
+              },
+              "similarityDialog": {
+                "sucessMessage": "Confirmação de identidade com sucesso com",
+                "errorMessage": "Confirmação de identidade sem sucesso com",
+                "restMessage": "de nível de similaridade!"
+              }
+            }
+          },
+          "show_data": {
+            "order": 5,
+            "required": false,
+            "data": {
+              "hasWantConfirmesChecks": true,
+              "warnDialog": {
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1726399749/wuirxqspxfcclfmskjq3.svg",
+                "title": "Atenção!",
+                "subtitle": "Verifique os dados a seguir.",
+                "text": " Marque a caixa ao lado em todos os campos para confirmar se o dado está correcto ou não e clique em submeter para avançar"
+              },
+              "dataToShow": [
+                "document_number",
+                "name",
+                "birth_date",
+                "born_province_id",
+                "residence_zone",
+                "residence_district_id",
+                "place_issue",
+                "gender",
+                "nationality",
+                "issueDate",
+                "expirationDate"
+              ]
+            }
+          },
+          "message": {
+            "order": 6,
+            "required": true,
+            "data": {
+              "title": {
+                "warn": "Ja realizou o registo agora pode submeter os teus dados",
+                "sucess": "Registo concluido com sucesso"
+              },
+              "description": {
+                "warn": "Lorem ipsum dolor sit, amet consectetur adipisicing elit Accusantium temporibus sapiente",
+                "sucess": "Lorem ipsum dolor sit, amet consectetur adipisicing elit Accusantium temporibus sapiente"
+              },
+              "button": {
+                "warn": "Enviar os dados",
+                "sucess": "Terminar"
+              }
+            }
+          },
+          "scanQrcode": {
+            "order": 90,
+            "active": true,
+            "required": false,
+            "data": {
+              "img": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png",
+              "title": "Captura e Confirmação da sua identidade",
+              "subtitle": "Digita o número do telemóvel ou faça scan do código QR para receber o link",
+              "qrcodeWasScan": {
+                "message": "Caro subscritor, o seu processo de registro será finalizado no seu dispositivo."
+              }
+            }
+          }
+        },
+        "customMessages": {
+          "sucessFace": "Face capturada com sucesso",
+          "ocrMessage": "Dados capturados com sucesso"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "entityId": "4674fa03-b2e7-48da-b27b-cfda7a90191b",
+      "systemConfiguration": {
+        "autoClose": false,
+        "redirectUrl": "https://web-services-chi.vercel.app/sucess",
+        "apiEndpoints": {
+          "bpinSearchEnabled": false,
+          "livenessSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/face_liveness_component.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
+          "ocrSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/document_reader.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
+          "bpin": {
+            "url": "https://modi.six.tablu.tech/api/bpin_check_subscriber",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "search_person": {
+            "url": "https://modi.six.tablu.tech/api/search_biometry_person",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "scan_face": {
+            "url": "https://modi.scan.tablu.tech/scan_face",
+            "token": "$2y$10$wsSpnCL1b2lNXTwfbnu2geal//orwZrAZh8lDT24ox7WOsE09p6.6"
+          },
+          "checkQrcode": {
+            "url": "https://modi.ocr.tablu.tech/see_qrcode_scanned",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "sendToken": {
+            "url": "https://modi.ocr.tablu.tech/sendToken",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "sendData": {
+            "url": "https://portal-7okv-git-modi-sdk-release-antonio-sitoes-projects.vercel.app/api/subscriber",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          }
+        },
+        "assets": {
+          "warnIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725949712/y26aqfnngy5ojen1lw8r.svg",
+          "errorIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956074/l1v8a3vot1wyxfgwrfng.svg",
+          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg",
+          "landscape": "https://res.cloudinary.com/noblestack/image/upload/v1726398112/cgtxvtztnojlaljbzo5g.svg",
+          "poweredBy": "https://res.cloudinary.com/noblestack/image/upload/v1726398113/q6sououthhztqir6o0uk.svg",
+          "check": "https://res.cloudinary.com/noblestack/image/upload/v1726399041/eubdcgn7lvkym3ygpsx7.svg",
+          "logo": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png"
+        },
+        "document_type": [
+          {
+            "id": 1,
+            "name": "Bilhete de identidade",
+            "code": "ID"
+          },
+          {
+            "id": 2,
+            "name": "Passaporte",
+            "code": "Passport"
+          },
+          {
+            "id": 3,
+            "name": "Carta de Conducão",
+            "code": "Driving_License"
+          },
+          {
+            "id": 4,
+            "name": "DIRE",
+            "code": "DIRE"
+          },
+          {
+            "id": 5,
+            "name": "Cartão de eleitor",
+            "code": "Voting_Card"
+          },
+          {
+            "id": 6,
+            "name": "Cartão de refugiado",
+            "code": ""
+          }
+        ],
+        "workflowSteps": {
+          "initial": {
+            "order": 1,
+            "required": true,
+            "data": {
+              "title": "Siga as instruções",
+              "info": [
+                {
+                  "title": "Escanear o documento",
+                  "description": "Faça o scan do seu documento.",
+                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
+                }
+              ],
+              "buttonRedirect": {
+                "label": "Clica aqui para mudar de telefone"
+              },
+              "button": {
+                "label": "Iniciar"
+              }
+            }
+          },
+          "liveness": {
+            "order": 2,
+            "required": false,
+            "data": {
+              "livenessType": "1"
+            }
+          },
+          "register_aditional_data": {
+            "order": 3,
+            "required": false,
+            "data": {
+              "title": "Dados adicionais"
+            }
+          },
+          "ocr": {
+            "order": 4,
+            "required": true,
+            "data": {
+              "startScrean": false,
+              "documentDialog": {
+                "title": "Faça scan do seu documento de identificação",
+                "label": "Tipo de documento",
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
+              },
+              "similarityDialog": {
+                "sucessMessage": "Confirmação de identidade com sucesso com",
+                "errorMessage": "Confirmação de identidade sem sucesso com",
+                "restMessage": "de nível de similaridade!"
+              }
+            }
+          },
+          "show_data": {
+            "order": 5,
+            "required": true,
+            "data": {
+              "hasWantConfirmesChecks": true,
+              "warnDialog": {
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1726399749/wuirxqspxfcclfmskjq3.svg",
+                "title": "Atenção!",
+                "subtitle": "Verifique os dados a seguir.",
+                "text": " Marque a caixa ao lado em todos os campos para confirmar se o dado está correcto ou não e clique em submeter para avançar"
+              },
+              "dataToShow": [
+                "document_number",
+                "name",
+                "birth_date",
+                "born_province_id",
+                "residence_zone",
+                "residence_district_id",
+                "place_issue",
+                "gender",
+                "nationality",
+                "issueDate",
+                "expirationDate"
+              ]
+            }
+          },
+          "message": {
+            "order": 6,
+            "required": true,
+            "data": {
+              "title": {
+                "warn": "Ja realizou o registo agora pode submeter os teus dados",
+                "sucess": "Registo concluido com sucesso"
+              },
+              "description": {
+                "warn": "Lorem ipsum dolor sit, amet consectetur adipisicing elit Accusantium temporibus sapiente",
+                "sucess": "Lorem ipsum dolor sit, amet consectetur adipisicing elit Accusantium temporibus sapiente"
+              },
+              "button": {
+                "warn": "Enviar os dados",
+                "sucess": "Terminar"
+              }
+            }
+          },
+          "scanQrcode": {
+            "order": 90,
+            "active": true,
+            "required": false,
+            "data": {
+              "img": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png",
+              "title": "Captura e Confirmação da sua identidade",
+              "subtitle": "Digita o número do telemóvel ou faça scan do código QR para receber o link",
+              "qrcodeWasScan": {
+                "message": "Caro subscritor, o seu processo de registro será finalizado no seu dispositivo."
+              }
+            }
+          }
+        },
+        "customMessages": {
+          "sucessFace": "Face capturada com sucesso",
+          "ocrMessage": "Dados capturados com sucesso"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "entityId": "4dc8c3a8-d78f-409b-8a57-3d0531e59574",
+      "systemConfiguration": {
+        "autoClose": false,
+        "redirectUrl": "https://web-services-chi.vercel.app/sucess",
+        "apiEndpoints": {
+          "bpinSearchEnabled": false,
+          "livenessSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/face_liveness_component.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
+          "ocrSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/document_reader.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
+          "bpin": {
+            "url": "https://modi.six.tablu.tech/api/bpin_check_subscriber",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "search_person": {
+            "url": "https://modi.six.tablu.tech/api/search_biometry_person",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "scan_face": {
+            "url": "https://modi.scan.tablu.tech/scan_face",
+            "token": "$2y$10$wsSpnCL1b2lNXTwfbnu2geal//orwZrAZh8lDT24ox7WOsE09p6.6"
+          },
+          "checkQrcode": {
+            "url": "https://modi.ocr.tablu.tech/see_qrcode_scanned",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "sendToken": {
+            "url": "https://modi.ocr.tablu.tech/sendToken",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          },
+          "sendData": {
+            "url": "https://portal-7okv-git-modi-sdk-release-antonio-sitoes-projects.vercel.app/api/subscriber",
+            "token": "$2b$10$LbK5CowvIw/41hisDp0douLnlIkD/LpbTnlkCq2TEoqEGUCQalmGa"
+          }
+        },
+        "assets": {
+          "warnIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725949712/y26aqfnngy5ojen1lw8r.svg",
+          "errorIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956074/l1v8a3vot1wyxfgwrfng.svg",
+          "sucessIcon": "https://res.cloudinary.com/noblestack/image/upload/v1725956262/tgcjdkuiosbaojemalsn.svg",
+          "landscape": "https://res.cloudinary.com/noblestack/image/upload/v1726398112/cgtxvtztnojlaljbzo5g.svg",
+          "poweredBy": "https://res.cloudinary.com/noblestack/image/upload/v1726398113/q6sououthhztqir6o0uk.svg",
+          "check": "https://res.cloudinary.com/noblestack/image/upload/v1726399041/eubdcgn7lvkym3ygpsx7.svg",
+          "logo": "https://res.cloudinary.com/noblestack/image/upload/v1725794117/yfxmhzurlypl0swpoyys.png"
+        },
+        "document_type": [
+          {
+            "id": 1,
+            "name": "Bilhete de identidade",
+            "code": "ID"
+          },
+          {
+            "id": 2,
+            "name": "Passaporte",
+            "code": "Passport"
+          },
+          {
+            "id": 3,
+            "name": "Carta de Conducão",
+            "code": "Driving_License"
+          },
+          {
+            "id": 4,
+            "name": "DIRE",
+            "code": "DIRE"
+          },
+          {
+            "id": 5,
+            "name": "Cartão de eleitor",
+            "code": "Voting_Card"
+          },
+          {
+            "id": 6,
+            "name": "Cartão de refugiado",
+            "code": ""
+          }
+        ],
+        "workflowSteps": {
+          "initial": {
+            "order": 1,
+            "required": true,
+            "data": {
+              "title": "Siga as instruções",
+              "info": [
+                {
+                  "title": "Escanear o documento",
+                  "description": "Faça o scan do seu documento.",
+                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
+                },
+                {
+                  "title": "Prova de vida",
+                  "description": "Com o telemóvel, siga as indicações do sistema para validar a fotografia do seu documento.",
+                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/r3zxluvkq0sb7iuojizf.svg"
+                },
+                {
+                  "title": "Problemas na câmera?",
+                  "description": "Se o telemóvel tiver problemas na câmera, permitimos que continue o processo usando outro telemóvel.",
+                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793231/bpyseteahcna9kmef9oc.svg",
+                  "action": true
+                }
+              ],
+              "buttonRedirect": {
+                "label": "Clica aqui para mudar de telefone"
+              },
+              "button": {
+                "label": "Iniciar"
+              }
+            }
+          },
+          "liveness": {
+            "order": 3,
+            "required": true,
+            "data": {
+              "livenessType": "1"
+            }
+          },
+          "register_aditional_data": {
+            "order": 3,
+            "required": false,
+            "data": {
+              "title": "Dados adicionais"
+            }
+          },
+          "ocr": {
+            "order": 2,
+            "required": true,
+            "data": {
+              "startScrean": false,
+              "documentDialog": {
+                "title": "Faça scan do seu documento de identificação",
+                "label": "Tipo de documento",
+                "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
+              },
+              "similarityDialog": {
+                "sucessMessage": "Confirmação de identidade com sucesso com",
+                "errorMessage": "Confirmação de identidade sem sucesso com",
+                "restMessage": "de nível de similaridade!"
+              }
+            }
+          },
+          "show_data": {
+            "order": 5,
+            "required": false,
             "data": {
               "hasWantConfirmesChecks": false,
               "warnDialog": {
