@@ -333,7 +333,7 @@
             "order": 2,
             "required": true,
             "data": {
-              "startScrean": false,
+              "startScrean": true,
               "documentDialog": {
                 "title": "Faça scan do seu documento de identificação",
                 "label": "Tipo de documento",
