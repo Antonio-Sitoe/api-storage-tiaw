@@ -110,8 +110,18 @@
               "title": "Siga as instruções",
               "info": [
                 {
+                  "title": "Prova de vida",
+                  "description": "Com o telemóvel, siga as indicações do sistema para validar a fotografia do seu documento.",
+                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/r3zxluvkq0sb7iuojizf.svg"
+                },
+                {
                   "title": "Escanear o documento",
                   "description": "Faça o scan do seu documento.",
+                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
+                },
+                {
+                  "title": "Visualize os seus dados",
+                  "description": "Voce pode analisar os seus dados e identificar os dados que nao estao de acordo.",
                   "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
                 }
               ],
@@ -124,15 +134,15 @@
             }
           },
           "liveness": {
-            "order": 3,
-            "required": false,
+            "order": 2,
+            "required": true,
             "data": {
               "livenessType": "1",
-              "hasSimilarity": true
+              "hasSimilarity": false
             }
           },
           "register_aditional_data": {
-            "order": 2,
+            "order": 3,
             "required": false,
             "data": {
               "title": "Dados adicionais"
