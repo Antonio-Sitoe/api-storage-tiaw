@@ -42,7 +42,7 @@
           "disable": "#D9D9D9",
           "background": "#F0F0F0",
           "foreground": "#FFFFFF",
-          "primary": "#72B84A",
+          "primary": "#DD2527",
           "destructive": "#E21717"
         },
         "apiEndpoints": {
