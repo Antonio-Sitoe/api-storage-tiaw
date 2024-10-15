@@ -255,7 +255,7 @@
           "disable": "#D9D9D9",
           "background": "#F0F0F0",
           "foreground": "#FFFFFF",
-          "primary": "#72B84A",
+          "primary": "#03045e",
           "destructive": "#E21717"
         },
         "apiEndpoints": {
@@ -333,17 +333,22 @@
             "order": 1,
             "required": true,
             "data": {
-              "title": "Siga as instruções empresa A",
+              "title": "Empresa Cenario 3",
               "info": [
                 {
-                  "title": "Escanear o documento",
-                  "description": "Faça o scan do seu documento.",
+                  "title": "Preencha o formulario",
+                  "description": "Submeta o seu nome, Número de telefone e email.",
                   "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
                 },
                 {
                   "title": "Prova de vida",
                   "description": "Com o telemóvel, siga as indicações do sistema para validar a fotografia do seu documento.",
                   "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/r3zxluvkq0sb7iuojizf.svg"
+                },
+                {
+                  "title": "Escanear o documento",
+                  "description": "Faça o scan do seu documento.",
+                  "img": "https://res.cloudinary.com/noblestack/image/upload/v1725793221/uoihis5colnfb8q0i4ao.svg"
                 }
               ],
               "buttonRedirect": {
@@ -358,22 +363,42 @@
             "order": 3,
             "required": true,
             "data": {
-              "livenessType": "1",
+              "livenessType": "2",
               "hasSimilarity": true
             }
           },
           "register_aditional_data": {
-            "order": 4,
-            "required": false,
-            "data": {
-              "title": "Dados adicionais"
-            }
-          },
-          "ocr": {
             "order": 2,
             "required": true,
             "data": {
-              "startScrean": false,
+              "title": "Dados adicionais",
+              "fields": [
+                {
+                  "label": "Nome completo",
+                  "type": "TEXT",
+                  "required": true,
+                  "name": "name"
+                },
+                {
+                  "label": "Número de telefone",
+                  "type": "PHONE",
+                  "required": true,
+                  "name": "phoneNumber"
+                },
+                {
+                  "label": "Email",
+                  "type": "EMAIL",
+                  "required": false,
+                  "name": "email"
+                }
+              ]
+            }
+          },
+          "ocr": {
+            "order": 4,
+            "required": true,
+            "data": {
+              "startScrean": true,
               "documentDialog": {
                 "title": "Faça scan do seu documento de identificação",
                 "label": "Tipo de documento",
@@ -388,9 +413,9 @@
           },
           "show_data": {
             "order": 5,
-            "required": false,
+            "required": true,
             "data": {
-              "hasWantConfirmesChecks": false,
+              "hasWantConfirmesChecks": true,
               "warnDialog": {
                 "img": "https://res.cloudinary.com/noblestack/image/upload/v1726399749/wuirxqspxfcclfmskjq3.svg",
                 "title": "Atenção!",
