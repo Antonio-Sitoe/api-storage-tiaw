@@ -32,6 +32,19 @@
       "systemConfiguration": {
         "autoClose": false,
         "redirectUrl": "https://web-services-chi.vercel.app/sucess",
+        "theme": {
+          "text": "#020817",
+          "textAlt": "#37373799",
+          "border": "#CCCCCC",
+          "input": "#E0E0E0",
+          "ring": "#A0A0A0",
+          "sucess": "#0B8043",
+          "disable": "#D9D9D9",
+          "background": "#F0F0F0",
+          "foreground": "#FFFFFF",
+          "primary": "#DD2628",
+          "destructive": "#E21717"
+        },
         "apiEndpoints": {
           "bpinSearchEnabled": false,
           "livenessSdk": "https://sdk.pre.modi.co.mz/sdk_v1.0.0.1/face_liveness_component.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
