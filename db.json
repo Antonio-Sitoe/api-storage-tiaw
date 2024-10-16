@@ -147,18 +147,56 @@
             }
           },
           "liveness": {
-            "order": 2,
+            "order": 3,
             "required": true,
             "data": {
-              "livenessType": "1",
+              "livenessType": "2",
               "hasSimilarity": false
             }
           },
           "register_aditional_data": {
-            "order": 8,
-            "required": false,
+            "order": 2,
+            "required": true,
             "data": {
-              "title": "Dados adicionais"
+              "title": "Dados adicionais",
+              "fields": [
+                {
+                  "label": "Nome completo",
+                  "type": "TEXT",
+                  "required": true,
+                  "name": "name"
+                },
+                {
+                  "label": "Número de telefone",
+                  "type": "PHONE",
+                  "required": true,
+                  "name": "phoneNumber"
+                },
+                {
+                  "label": "NUIT",
+                  "type": "NUIT",
+                  "required": false,
+                  "name": "nuit"
+                },
+                {
+                  "label": "File NUIT",
+                  "type": "FILE|DOCS",
+                  "required": false,
+                  "name": "file_doc"
+                },
+                {
+                  "label": "Email",
+                  "type": "EMAIL|PHONE",
+                  "required": false,
+                  "name": "OTHER"
+                },
+                {
+                  "label": "Data",
+                  "type": "DATE",
+                  "required": false,
+                  "name": "birthday"
+                }
+              ]
             }
           },
           "ocr": {
@@ -456,7 +494,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 3,
       "entityId": "d4228666-36a2-46c3-8469-dbc537960f84",
       "systemConfiguration": {
         "autoClose": true,
@@ -697,8 +735,9 @@
         }
       }
     },
+
     {
-      "id": 3,
+      "id": 4,
       "entityId": "e15d31f2-7db9-4cbf-9d93-99dd8fa1ff5c",
       "systemConfiguration": {
         "autoClose": true,
@@ -713,7 +752,7 @@
           "disable": "#D9D9D9",
           "background": "#F0F0F0",
           "foreground": "#FFFFFF",
-          "primary": "#72B84A",
+          "primary": "#F66045",
           "destructive": "#E21717"
         },
         "apiEndpoints": {
