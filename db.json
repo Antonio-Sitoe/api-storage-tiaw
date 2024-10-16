@@ -306,26 +306,6 @@
             "id": 2,
             "name": "Passaporte",
             "code": "Passport"
-          },
-          {
-            "id": 3,
-            "name": "Carta de Conducão",
-            "code": "Driving_License"
-          },
-          {
-            "id": 4,
-            "name": "DIRE",
-            "code": "DIRE"
-          },
-          {
-            "id": 5,
-            "name": "Cartão de eleitor",
-            "code": "Voting_Card"
-          },
-          {
-            "id": 6,
-            "name": "Cartão de refugiado",
-            "code": ""
           }
         ],
         "workflowSteps": {
