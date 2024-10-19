@@ -185,6 +185,12 @@
                   "name": "file_doc"
                 },
                 {
+                  "label": "Email",
+                  "type": "EMAIL",
+                  "required": false,
+                  "name": "email"
+                },
+                {
                   "label": "Data de nascimento",
                   "type": "DATE",
                   "required": false,
