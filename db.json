@@ -185,13 +185,7 @@
                   "name": "file_doc"
                 },
                 {
-                  "label": "Email",
-                  "type": "EMAIL|PHONE",
-                  "required": false,
-                  "name": "OTHER"
-                },
-                {
-                  "label": "Data",
+                  "label": "Data de nascimento",
                   "type": "DATE",
                   "required": false,
                   "name": "birthday"
