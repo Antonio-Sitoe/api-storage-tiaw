@@ -191,6 +191,12 @@
                   "name": "email"
                 },
                 {
+                  "label": "Email",
+                  "type": "EMAIL|PHONE",
+                  "required": false,
+                  "name": "OTHER"
+                },
+                {
                   "label": "Data de nascimento",
                   "type": "DATE",
                   "required": false,
