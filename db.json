@@ -186,9 +186,9 @@
                 },
                 {
                   "label": "Email",
-                  "type": "EMAIL|PHONE",
+                  "type": "EMAIL",
                   "required": false,
-                  "name": "OTHER"
+                  "name": "email"
                 },
                 {
                   "label": "Data de nascimento",
