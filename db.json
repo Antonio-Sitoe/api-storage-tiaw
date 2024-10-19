@@ -186,12 +186,6 @@
                 },
                 {
                   "label": "Email",
-                  "type": "EMAIL",
-                  "required": false,
-                  "name": "email"
-                },
-                {
-                  "label": "Email",
                   "type": "EMAIL|PHONE",
                   "required": false,
                   "name": "OTHER"
