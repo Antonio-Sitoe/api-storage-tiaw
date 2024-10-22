@@ -513,7 +513,7 @@
           "destructive": "#E21717"
         },
         "apiEndpoints": {
-          "bpinSearchEnabled": false,
+          "bpinSearchEnabled": true,
           "livenessSdk": "https://cdn.modi.tablu.tech/sdk_testk/face_liveness_component.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
           "ocrSdk": "https://cdn.modi.tablu.tech/sdk_testk/document_reader.min.js?key=$2y$10$q6P7XwLxQk2QWlFg.b5Z4OvjGLQ9VjwE3cB8kXsEg6O1Bw6o",
           "bpin": {
